@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create an account — Stackly</title>
+<meta name="description" content="Create your Stackly account.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body>
+
+<div class="authpage">
+
+  <div class="authpage__visual">
+    <img src="assets/images/products.webp" alt="Skincare products">
+    <div class="authpage__visual-copy">
+      <p class="eyebrow">Join Stackly</p>
+      <h2>Start your ritual today.</h2>
+      <p>Create an account to save favourites, track orders and get first access to new formulas.</p>
+    </div>
+  </div>
+
+  <div class="authpage__form-side">
+    <div class="authcard">
+      <div class="authcard__topbar">
+        <a href="index.html" class="authcard__mark">
+          <img src="assets/images/stackly-logo.webp" alt="Stackly">
+        </a>
+        <a href="index.html" class="authcard__back">Back to home <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="authcard__head">
+        <h1>Create your account</h1>
+        <p>Takes less than a minute.</p>
+      </div>
+
+      <form class="authform" id="signupForm" novalidate>
+        <div class="authfield" id="signupNameField">
+          <label for="signupName">Full name</label>
+          <div class="authfield__control">
+            <input type="text" id="signupName" placeholder="Your name" autocomplete="off">
+          </div>
+          <span class="authfield__error"></span>
+        </div>
+
+        <div class="authfield" id="signupEmailField">
+          <label for="signupEmail">Email address</label>
+          <div class="authfield__control">
+            <input type="email" id="signupEmail" placeholder="you@example.com" autocomplete="off">
+          </div>
+          <span class="authfield__error"></span>
+        </div>
+
+        <div class="authfield" id="signupPasswordField">
+          <label for="signupPassword">Password</label>
+          <div class="authfield__control">
+            <input type="password" id="signupPassword" placeholder="At least 6 characters" autocomplete="off">
+            <button type="button" class="authfield__toggle">Show</button>
+          </div>
+          <span class="authfield__error"></span>
+        </div>
+
+        <div class="authfield" id="signupConfirmField">
+          <label for="signupConfirm">Confirm password</label>
+          <div class="authfield__control">
+            <input type="password" id="signupConfirm" placeholder="Re-enter password" autocomplete="off">
+            <button type="button" class="authfield__toggle">Show</button>
+          </div>
+          <span class="authfield__error"></span>
+        </div>
+
+        <button type="submit" class="btn btn--solid">Create account</button>
+        <p class="authnote" id="signupNote"></p>
+      </form>
+
+      <p class="authcard__foot">Already have an account? <a href="login.html">Sign in</a></p>
+    </div>
+  </div>
+
+</div>
+
+<script src="assets/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — Stackly Botanical Beauty</title>
+  <meta name="description"
+    content="Shop Stackly's skincare, makeup, hair and fragrance rituals — botanical formulas made in small batches, cruelty-free always.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/products.css">
+</head>
+
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div id="preloader">
+    <span class="preloader__mark"><img src="assets/images/stackly-white.webp" alt="Stackly Logo"></span>
+    <div class="preloader__bar"></div>
+    <span class="preloader__tag">Botanical Rituals</span>
+  </div>
+
+  <div class="grain"></div>
+
+  <!-- progress bar -->
+  <div class="scroll-bar">
+    <div class="scroll-bar__fill" id="scrollFill"></div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="siteNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__mark">
+        <img src="assets/images/stackly-white.webp" alt="Stackly" class="nav__logo nav__logo--white">
+        <img src="assets/images/stackly-logo.webp" alt="Stackly" class="nav__logo nav__logo--dark">
+      </a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html" class="is-active">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn--ghost">Login</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav__mobile" id="navMobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html" class="is-active">Products</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="nav__mobile-login">Login</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ 1. SHOP HERO ============ -->
+    <section class="shop-hero">
+
+      <!-- right: full-height photo panel -->
+      <div class="shop-hero__visual" data-aos="fade" data-aos-delay="0" data-aos-duration="1200">
+        <img src="assets/images/products.webp"
+          alt="glowing skin">
+      </div>
+
+      <!-- left: copy panel -->
+      <div class="shop-hero__text">
+        <div class="shop-hero__topline" data-aos="fade-up" data-aos-delay="100">
+          <p class="crumb"><a href="index.html">Home</a><span>/</span>Shop</p>
+          <p class="shop-hero__kicker">
+            <span class="shop-hero__kicker-dot" aria-hidden="true"></span>
+            Free shipping over &#8377;1,500
+          </p>
+        </div>
+
+        <h1 class="shop-hero__title">
+          <span class="line"><span data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Four rituals,</span></span>
+          <span class="line"><span data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"><em>one</em> small-batch shelf.</span></span>
+        </h1>
+
+        <p class="shop-hero__sub" data-aos="fade-up" data-aos-delay="400">Skincare, makeup, hair and fragrance — six plant actives, no fillers,
+          nothing that isn't earning its place.</p>
+
+        <div class="shop-hero__cta" data-aos="fade-up" data-aos-delay="500">
+          <a href="about.html" class="btn btn--solid">About Us <i class="fas fa-arrow-right"></i></a>
+          <a href="contact.html" class="btn btn--outline-light btn--sm">Contact Us <i class="fas fa-envelope"></i></a>
+        </div>
+
+        <nav class="shop-hero__chips" aria-label="Jump to a category" data-aos="fade-up" data-aos-delay="600">
+          <a class="chip" href="#shop-grid" data-jump="all">All</a>
+          <a class="chip" href="#shop-grid" data-jump="skincare">Skincare</a>
+          <a class="chip" href="#shop-grid" data-jump="makeup">Makeup</a>
+          <a class="chip" href="#shop-grid" data-jump="hair">Hair</a>
+          <a class="chip" href="#shop-grid" data-jump="fragrance">Fragrance</a>
+        </nav>
+
+        <dl class="shop-hero__stats" data-aos="fade-up" data-aos-delay="700">
+          <div class="shop-hero__stat">
+            <dt>Products</dt>
+            <dd>08</dd>
+          </div>
+          <div class="shop-hero__stat">
+            <dt>Categories</dt>
+            <dd>04</dd>
+          </div>
+          <div class="shop-hero__stat">
+            <dt>Dispatch</dt>
+            <dd>48h</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- bestseller spotlight, overlaid on the photo -->
+      <a href="404.html" class="shop-hero__feature" data-aos="fade-up" data-aos-delay="800">
+        <span class="shop-hero__feature-media">
+          <img
+            src="assets/images/hero-image.webp"
+            alt="serum">
+        </span>
+        <span class="shop-hero__feature-body">
+          <span class="shop-hero__feature-label">Bestseller</span>
+          <span class="shop-hero__feature-title">Bloom Repair Serum</span>
+          <span class="shop-hero__feature-meta">Bakuchiol + squalane <span aria-hidden="true">&middot;</span>
+            &#8377;2,150</span>
+        </span>
+        <span class="shop-hero__feature-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+      </a>
+
+    </section>
+
+    <!-- ============ 2. FILTER + PRODUCT SHOWCASE ============ -->
+    <section class="shop" id="shop-grid">
+
+      <!-- vertical category tabs (left edge) -->
+      <aside class="shop__tabs" data-aos="fade-right" role="tablist" aria-label="Filter products by category" id="shopFilter">
+        <button class="shop__tab is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="shop__tab" data-filter="skincare" role="tab" aria-selected="false">Skincare</button>
+        <button class="shop__tab" data-filter="makeup" role="tab" aria-selected="false">Makeup</button>
+        <button class="shop__tab" data-filter="hair" role="tab" aria-selected="false">Hair</button>
+        <button class="shop__tab" data-filter="fragrance" role="tab" aria-selected="false">Fragrance</button>
+      </aside>
+
+      <!-- main two-column stage -->
+      <div class="shop__stage">
+
+        <!-- left — active product hero image -->
+        <div class="shop__visual" data-aos="fade-up" data-aos-delay="100" id="shopVisual">
+          <div class="shop__visual-img is-active" data-vis="0">
+            <img
+              src="assets/images/contact.webp"
+              alt="">
+          </div>
+          <div class="shop__visual-img" data-vis="1">
+            <img src="assets/images/pink-lip-balm.webp" alt="">
+          </div>
+          <div class="shop__visual-img" data-vis="2">
+            <img
+              src="assets/images/shades.webp"
+              alt="">
+          </div>
+          <div class="shop__visual-img" data-vis="3">
+            <img
+              src="assets/images/makeup-shadows-and-blushes.webp"
+              alt="">
+          </div>
+          <div class="shop__visual-img" data-vis="4">
+            <img src="assets/images/night-serum.webp"
+              alt="">
+          </div>
+          <div class="shop__visual-img" data-vis="5">
+            <img src="assets/images/serums.webp"
+              alt="">
+          </div>
+          <div class="shop__visual-img" data-vis="6">
+            <img
+              src="assets/images/products.webp"
+              alt="">
+          </div>
+          <div class="shop__visual-img" data-vis="7">
+            <img src="assets/images/fragrance.webp" alt="">
+          </div>
+          <!-- category label overlay -->
+          <span class="shop__visual-cat" id="shopVisualCat">Skincare</span>
+        </div>
+
+        <!-- right — product list -->
+        <div class="shop__list" id="productGrid">
+
+          <div class="shop__header" data-aos="fade-up">
+            <p class="eyebrow" data-aos="fade-up">Full collection</p>
+            <h2 data-aos="fade-up" data-aos-delay="80">Everything on<br>the shelf.</h2>
+          </div>
+
+          <ul class="shop-list" id="shopList">
+
+            <li class="shop-item" data-category="skincare" data-vis="0">
+              <a href="404.html" class="shop-item__inner">
+                <span class="shop-item__idx">01</span>
+                <div class="shop-item__text">
+                  <span class="shop-item__tag">Skincare</span>
+                  <h3 class="shop-item__name">Bloom Repair Serum</h3>
+                  <p class="shop-item__desc">Bakuchiol + squalane, once nightly.</p>
+                </div>
+                <span class="shop-item__price">₹2,150</span>
+                <button class="shop-item__add" data-name="Bloom Repair Serum"
+                  aria-label="Add Bloom Repair Serum to bag">
+                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+              </a>
+            </li>
+
+            <li class="shop-item" data-category="skincare" data-vis="1">
+              <a href="404.html" class="shop-item__inner">
+                <span class="shop-item__idx">02</span>
+                <div class="shop-item__text">
+                  <span class="shop-item__tag">Skincare</span>
+                  <h3 class="shop-item__name">Barrier Repair Cream</h3>
+                  <p class="shop-item__desc">Ceramide-rich, for compromised skin.</p>
+                </div>
+                <span class="shop-item__price">₹1,850</span>
+                <button class="shop-item__add" data-name="Barrier Repair Cream"
+                  aria-label="Add Barrier Repair Cream to bag">
+                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+              </a>
+            </li>
+
+            <li class="shop-item" data-category="makeup" data-vis="2">
+              <a href="404.html" class="shop-item__inner">
+                <span class="shop-item__idx">03</span>
+                <div class="shop-item__text">
+                  <span class="shop-item__tag">Makeup</span>
+                  <h3 class="shop-item__name">Sheer Bloom Lipstick</h3>
+                  <p class="shop-item__desc">Buildable colour, satin finish.</p>
+                </div>
+                <span class="shop-item__price">₹950</span>
+                <button class="shop-item__add" data-name="Sheer Bloom Lipstick"
+                  aria-label="Add Sheer Bloom Lipstick to bag">
+                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+              </a>
+            </li>
+
+            <li class="shop-item" data-category="makeup" data-vis="3">
+              <a href="404.html" class="shop-item__inner">
+                <span class="shop-item__idx">04</span>
+                <div class="shop-item__text">
+                  <span class="shop-item__tag">Makeup</span>
+                  <h3 class="shop-item__name">Soft Focus Eye Palette</h3>
+                  <p class="shop-item__desc">Six warm neutrals, blends without effort.</p>
+                </div>
+                <span class="shop-item__price">₹1,650</span>
+                <button class="shop-item__add" data-name="Soft Focus Eye Palette"
+                  aria-label="Add Soft Focus Eye Palette to bag">
+                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+              </a>
+            </li>
+
+            <li class="shop-item" data-category="hair" data-vis="4">
+              <a href="404.html" class="shop-item__inner">
+                <span class="shop-item__idx">05</span>
+                <div class="shop-item__text">
+                  <span class="shop-item__tag">Hair</span>
+                  <h3 class="shop-item__name">Scalp Renewal Oil</h3>
+                  <p class="shop-item__desc">Rosemary and centella, twice weekly.</p>
+                </div>
+                <span class="shop-item__price">₹1,250</span>
+                <button class="shop-item__add" data-name="Scalp Renewal Oil" aria-label="Add Scalp Renewal Oil to bag">
+                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+              </a>
+            </li>
+
+            <li class="shop-item" data-category="hair" data-vis="5">
+              <a href="404.html" class="shop-item__inner">
+                <span class="shop-item__idx">06</span>
+                <div class="shop-item__text">
+                  <span class="shop-item__tag">Hair</span>
+                  <h3 class="shop-item__name">Weightless Shine Serum</h3>
+                  <p class="shop-item__desc">Marula-based, no weigh-down.</p>
+                </div>
+                <span class="shop-item__price">₹1,450</span>
+                <button class="shop-item__add" data-name="Weightless Shine Serum"
+                  aria-label="Add Weightless Shine Serum to bag">
+                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+              </a>
+            </li>
+
+            <li class="shop-item" data-category="fragrance" data-vis="6">
+              <a href="404.html" class="shop-item__inner">
+                <span class="shop-item__idx">07</span>
+                <div class="shop-item__text">
+                  <span class="shop-item__tag">Fragrance</span>
+                  <h3 class="shop-item__name">Botanical Eau de Parfum</h3>
+                  <p class="shop-item__desc">Vetiver, fig leaf, white musk.</p>
+                </div>
+                <span class="shop-item__price">₹3,200</span>
+                <button class="shop-item__add" data-name="Botanical Eau de Parfum"
+                  aria-label="Add Botanical Eau de Parfum to bag">
+                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+              </a>
+            </li>
+
+            <li class="shop-item" data-category="fragrance" data-vis="7">
+              <a href="404.html" class="shop-item__inner">
+                <span class="shop-item__idx">08</span>
+                <div class="shop-item__text">
+                  <span class="shop-item__tag">Fragrance</span>
+                  <h3 class="shop-item__name">Petal Travel Spray</h3>
+                  <p class="shop-item__desc">30ml — the same formula, smaller bottle.</p>
+                </div>
+                <span class="shop-item__price">₹1,100</span>
+                <button class="shop-item__add" data-name="Petal Travel Spray"
+                  aria-label="Add Petal Travel Spray to bag">
+                  <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                </button>
+              </a>
+            </li>
+
+          </ul>
+
+          <p class="product-grid__empty" id="productGridEmpty">No products in this category yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. TRUST STRIP ============ -->
+    <section class="trust-strip" id="trust">
+      <div class="trust-strip__item" data-aos="fade-up">
+        <span class="trust-strip__mark">01</span>
+        <p>Cruelty-free, always</p>
+      </div>
+      <div class="trust-strip__item" data-aos="fade-up" data-aos-delay="80">
+        <span class="trust-strip__mark">02</span>
+        <p>Vegan formulas</p>
+      </div>
+      <div class="trust-strip__item" data-aos="fade-up" data-aos-delay="160">
+        <span class="trust-strip__mark">03</span>
+        <p>Dermatologist tested</p>
+      </div>
+      <div class="trust-strip__item" data-aos="fade-up" data-aos-delay="240">
+        <span class="trust-strip__mark">04</span>
+        <p>Free shipping over ₹1,499</p>
+      </div>
+      <div class="trust-strip__item" data-aos="fade-up" data-aos-delay="320">
+        <span class="trust-strip__mark">05</span>
+        <p>30-day easy returns</p>
+      </div>
+    </section>
+
+    <!-- ============ 3. FEATURED PRODUCT SPOTLIGHT ============ -->
+    <section class="featured-product" id="featured">
+      <div class="featured-product__media" data-parallax data-aos="fade-right">
+        <img src="assets/images/serum.webp"
+          alt="skincare">
+      </div>
+      <div class="featured-product__text">
+        <p class="eyebrow" data-aos="fade-up">Bestseller</p>
+        <h2 data-split-reveal>Bloom Repair Serum — the one people reach for twice.</h2>
+        <div class="featured-product__rating">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <span>4.8 · 312 reviews</span>
+        </div>
+        <p class="body-lg" data-aos="fade-up" data-aos-delay="100">A single-pump nightly serum built around clinical-strength bakuchiol and squalane. No
+          synthetic fragrance, no filler oils — just the two actives doing the work, at a dose we can prove.</p>
+        <ul class="featured-product__tags">
+          <li>Bakuchiol</li>
+          <li>Squalane</li>
+          <li>Vitamin E</li>
+        </ul>
+        <div class="featured-product__buy">
+          <span class="featured-product__price">₹2,150</span>
+          <a href="404.html"><button class="btn btn--solid" data-name="Bloom Repair Serum">Add to bag <i class="fa fa-shopping-bag"></i></button></a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ 6. CUSTOMER REVIEWS ============ -->
+    <section class="reviews" id="reviews">
+
+      <div class="reviews__inner">
+        <div class="reviews__head">
+          <div data-aos="fade-up">
+            <p class="eyebrow">Reviews</p>
+            <h2>What's landing in<br>real routines.</h2>
+          </div>
+          <div class="reviews__rating-summary" data-aos="fade-up" data-aos-delay="100" aria-label="Overall rating">
+            <span class="reviews__big-num">4.8</span>
+            <div class="reviews__summary-right">
+              <span class="stars" aria-hidden="true">★★★★★</span>
+              <span class="reviews__total">from 312 verified buyers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews__wall">
+
+          <blockquote class="rv-card rv-card--featured" data-aos="fade-up" data-aos-delay="0">
+            <span class="rv-card__mark" aria-hidden="true">"</span>
+            <p class="rv-card__quote">The scalp oil calmed dandruff I'd had for two years — in three weeks.</p>
+            <footer class="rv-card__foot">
+              <div class="rv-card__avatar">
+                <img src="assets/images/people-1.webp"
+                  alt="Kavya R.">
+              </div>
+              <div class="rv-card__meta">
+                <strong class="rv-card__name">Kavya R.</strong>
+                <span class="rv-card__product">Scalp Renewal Oil</span>
+              </div>
+              <span class="rv-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="rv-card" data-aos="fade-up" data-aos-delay="20">
+            <span class="rv-card__mark" aria-hidden="true">"</span>
+            <p class="rv-card__quote">Wears all day without needing a touch-up, even in Chennai humidity.</p>
+            <footer class="rv-card__foot">
+              <div class="rv-card__avatar">
+                  <img src="assets/images/people-2.webp"
+                  alt="Ishaan M.">
+              </div>
+              <div class="rv-card__meta">
+                <strong class="rv-card__name">Ishaan M.</strong>
+                <span class="rv-card__product">Sheer Bloom Lipstick</span>
+              </div>
+              <span class="rv-card__stars" aria-label="4 out of 5 stars">★★★★☆</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="rv-card" data-aos="fade-up" data-aos-delay="40">
+            <span class="rv-card__mark" aria-hidden="true">"</span>
+            <p class="rv-card__quote">
+              Feels lightweight on the skin and gives a smooth, natural finish that lasts all day.
+            </p>
+            <footer class="rv-card__foot">
+              <div class="rv-card__avatar">
+                  <img src="assets/images/people-3.webp"
+                  alt="Meera R.">
+              </div>
+              <div class="rv-card__meta">
+                <strong class="rv-card__name">Meera R.</strong>
+                <span class="rv-card__product">Velvet Glow Foundation</span>
+              </div>
+              <span class="rv-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="rv-card" data-aos="fade-up" data-aos-delay="60">
+            <span class="rv-card__mark" aria-hidden="true">"</span>
+            <p class="rv-card__quote">First serum that hasn't broken me out in years. Repurchased three times now.</p>
+            <footer class="rv-card__foot">
+              <div class="rv-card__avatar">
+                 <img src="assets/images/people-4.webp"
+                  alt="Ramya K.">
+              </div>
+              <div class="rv-card__meta">
+                <strong class="rv-card__name">Ramya K.</strong>
+                <span class="rv-card__product">Bloom Repair Serum</span>
+              </div>
+              <span class="rv-card__stars" aria-label="5 out of 5 stars">★★★★★</span>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ============ 4. RITUAL BUNDLES ============ -->
+    <section class="bundles" id="bundles">
+
+      <div class="bundles__inner">
+        <!-- header — left aligned -->
+        <div class="bundles__header">
+          <p class="eyebrow" data-aos="fade-up">Save as a set</p>
+          <h2 data-aos="fade-up" data-aos-delay="80">Build the ritual,<br>not just the cart.</h2>
+          <p class="bundles__sub" data-aos="fade-up" data-aos-delay="160">Every bundle is formulated to work together. Pick a starting point — your skin will tell you where to go next.</p>
+        </div>
+
+        <!-- 3 bundle panels -->
+        <div class="bundles__grid">
+
+          <div class="bundle-panel" data-aos="fade-up" data-aos-delay="0">
+            <span class="bundle-panel__bg-num" aria-hidden="true">01</span>
+            <div class="bundle-panel__top">
+              <span class="bundle-panel__save">Save 12%</span>
+              <span class="bundle-panel__badge">Starter</span>
+            </div>
+            <h3 class="bundle-panel__name">Starter Ritual</h3>
+            <p class="bundle-panel__desc">The three products every Stackly routine begins with.</p>
+            <ul class="bundle-panel__items">
+              <li>Gentle Cream Cleanser</li>
+              <li>Bloom Repair Serum</li>
+              <li>Barrier Repair Cream</li>
+            </ul>
+            <div class="bundle-panel__foot">
+              <div class="bundle-panel__pricing">
+                <span class="bundle-panel__price">₹2,900</span>
+                <span class="bundle-panel__was">₹3,300</span>
+              </div>
+              <a href="404.html"><button class="btn btn--ghost bundle-panel__cta" data-name="Starter Ritual">Add set <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+          </div>
+
+          <div class="bundle-panel bundle-panel--featured" data-aos="fade-up" data-aos-delay="120">
+            <span class="bundle-panel__bg-num" aria-hidden="true">02</span>
+            <div class="bundle-panel__top">
+              <span class="bundle-panel__save">Save 18%</span>
+              <span class="bundle-panel__badge bundle-panel__badge--gold">Most loved</span>
+            </div>
+            <h3 class="bundle-panel__name">Glow Ritual</h3>
+            <p class="bundle-panel__desc">Our most-repurchased combination, four steps in.</p>
+            <ul class="bundle-panel__items">
+              <li>Bloom Repair Serum</li>
+              <li>Brightening Eye Cream</li>
+              <li>Daily Mineral SPF</li>
+              <li>Marula Face Oil</li>
+            </ul>
+            <div class="bundle-panel__foot">
+              <div class="bundle-panel__pricing">
+                <span class="bundle-panel__price">₹4,650</span>
+                <span class="bundle-panel__was">₹5,650</span>
+              </div>
+              <a href="404.html"><button class="btn btn--solid bundle-panel__cta" data-name="Glow Ritual">Add set <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+          </div>
+
+          <div class="bundle-panel" data-aos="fade-up" data-aos-delay="240">
+            <span class="bundle-panel__bg-num" aria-hidden="true">03</span>
+            <div class="bundle-panel__top">
+              <span class="bundle-panel__save">Save 25%</span>
+              <span class="bundle-panel__badge">Best value</span>
+            </div>
+            <h3 class="bundle-panel__name">Full Collection</h3>
+            <p class="bundle-panel__desc">One hero product from every category, in one order.</p>
+            <ul class="bundle-panel__items">
+              <li>Bloom Repair Serum</li>
+              <li>Sheer Bloom Lipstick</li>
+              <li>Scalp Renewal Oil</li>
+              <li>Botanical Eau de Parfum</li>
+            </ul>
+            <div class="bundle-panel__foot">
+              <div class="bundle-panel__pricing">
+                <span class="bundle-panel__price">₹8,900</span>
+                <span class="bundle-panel__was">₹11,850</span>
+              </div>
+              <a href="404.html"><button class="btn btn--ghost bundle-panel__cta" data-name="Full Collection">Add set <i class="fa-solid fa-arrow-right"></i></button></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- ============ 7. NEWSLETTER ============ -->
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter__inner">
+
+        <div class="newsletter__kicker" data-aos="fade-up">
+          <span class="newsletter__line" aria-hidden="true"></span>
+          <p class="eyebrow">Join the list</p>
+          <span class="newsletter__line" aria-hidden="true"></span>
+        </div>
+
+        <h2 class="newsletter__heading" data-aos="fade-up" data-aos-delay="80">
+          Never miss a restock.<br>
+          <em>Or a new formula.</em>
+        </h2>
+
+        <p class="newsletter__pitch" data-aos="fade-up" data-aos-delay="160">One email a month — restock alerts, early access, and the occasional discount. No noise.</p>
+
+        <form class="newsletter__form" data-aos="fade-up" data-aos-delay="240" id="newsletterForm" novalidate>
+          <div class="newsletter__field-wrap">
+            <input type="email" required placeholder="your@email.com" aria-label="Email address">
+            <button type="submit" class="newsletter__btn">
+              Subscribe <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+          <p class="newsletter__note" id="newsletterNote" role="status" aria-live="polite">Unsubscribe anytime — no questions asked.</p>
+        </form>
+
+        <ul class="newsletter__trust" data-aos="fade-up" data-aos-delay="320" aria-label="Reassurances">
+          <li><i class="fa-solid fa-lock" aria-hidden="true"></i> No sharing your data</li>
+          <li><i class="fa-regular fa-envelope" aria-hidden="true"></i> One email a month</li>
+          <li><i class="fa-solid fa-leaf" aria-hidden="true"></i> Stackly curated only</li>
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand" data-aos="fade-up" data-aos-delay="0">
+        <a href="products.html" class="footer__logo">
+          <img src="assets/images/stackly-logo.webp" alt="Stackly">
+        </a>
+        <p>Botanical formulas made in small batches. Cruelty-free, always.</p>
+        <div class="footer__brand-social">
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="404.html" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="404.html" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__col" data-aos="fade-up" data-aos-delay="80">
+        <h4>Quick Links</h4>
+        <a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a>
+        <a href="about.html"><i class="fa-solid fa-chevron-right"></i> About</a>
+        <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Products</a>
+        <a href="blog.html"><i class="fa-solid fa-chevron-right"></i> Blog</a>
+        <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a>
+      </div>
+      <div class="footer__col" data-aos="fade-up" data-aos-delay="160">
+        <h4>Shop</h4>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Skincare</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Makeup</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Hair</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Fragrance</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Cosmetics</a>
+      </div>
+      <div class="footer__col" data-aos="fade-up" data-aos-delay="240">
+        <h4>Contact</h4>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="404.html">+91 9876543210</a>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="404.html">info@thestackly.com</a>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Salem, Tamil Nadu,<br>India</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom" data-aos="fade" data-aos-offset="0">
+      <p>© 2026 Stackly Beauty Co. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="404.html">Terms & Conditions</a>
+        <a href="404.html">Policy</a>
+        <a href="404.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/products.js"></script>
+</body>
+
+</html>

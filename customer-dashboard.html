@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Dashboard — Stackly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body data-role="customer">
+
+<div class="dash-shell">
+
+  <div class="side" id="side">
+    <a href="customer-dashboard.html" class="side__logo"><img src="assets/images/stackly-logo.webp" alt="Stackly"></a>
+    <p class="side__role">Customer Dashboard</p>
+    <div class="menu" id="menu">
+      <button type="button" class="is-active" data-id="overview">
+        <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" /></svg>
+        Overview
+      </button>
+      <button type="button" data-id="orders">
+        <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8a3 3 0 016 0" /></svg>
+        My Orders
+      </button>
+      <button type="button" data-id="wishlist">
+        <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z" /></svg>
+        Wishlist
+      </button>
+      <button type="button" data-id="account">
+        <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 100-8 4 4 0 000 8zM4 21c0-4 4-6 8-6s8 2 8 6" /></svg>
+        Profile & Rewards
+      </button>
+    </div>
+    <div class="side__foot">
+      <a href="index.html"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4z"/></svg>Back to Home</a>
+      <a href="login.html"><svg viewBox="0 0 24 24"><path d="M10 4H5v16h5M15 8l4 4-4 4M19 12H9"/></svg>Logout</a>
+    </div>
+  </div>
+  <div class="scrim" id="scrim"></div>
+
+  <div class="main">
+    <div class="top">
+      <button type="button" class="burger" id="burger" aria-label="Toggle menu"><span></span></button>
+      <span class="top__title">Customer Dashboard</span>
+      <div class="who"><i id="whoAvatar">G</i><div><small>Signed in as</small><b id="who"></b></div></div>
+    </div>
+    <div class="content" id="content">
+      <div class="panel is-active" id="panel-overview">
+        <div class="panel__head">
+          <span class="eyebrow-s">Customer Dashboard</span>
+          <h1>Your ritual, at a glance</h1>
+          <p>Orders, rewards and picks chosen for your skin.</p>
+        </div>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Snapshot</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">View all</a>
+          </div>
+          <div class="stats">
+            <div class="card stat">
+              <span>Orders</span>
+              <strong>12</strong>
+              <small>2 this month</small>
+            </div>
+            <div class="card stat">
+              <span>Reward points</span>
+              <strong>2,480</strong>
+              <small>520 to next tier</small>
+            </div>
+            <div class="card stat">
+              <span>Wishlist</span>
+              <strong>8</strong>
+              <small>3 back in stock</small>
+            </div>
+            <div class="card stat">
+              <span>Ritual streak</span>
+              <strong>14 days</strong>
+              <small>Keep it going</small>
+            </div>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Latest order</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Track order</a>
+          </div>
+          <div class="card">
+            <ol class="steps">
+              <li class="done">Placed</li>
+              <li class="done">Packed</li>
+              <li class="now">Shipped</li>
+              <li class="">Delivered</li>
+            </ol>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Picked for you</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Shop all</a>
+          </div>
+          <div class="tiles">
+            <div class="card tile">
+              <div class="tile__sw" style="background: linear-gradient(135deg, #22402c, #3d6a4b)">
+                <img
+                  src="assets/images/night-serum.webp"
+                  alt="Botanical Serum"
+                  loading="lazy"
+                  onerror="this.remove()"
+                />
+              </div>
+              <div class="tile__body">
+                <b>Botanical Serum</b>
+                <small>$48 · Hydrating</small>
+                <a class="dbtn dbtn--ghost" href="404.html">Add to bag</a>
+              </div>
+            </div>
+            <div class="card tile">
+              <div class="tile__sw" style="background: linear-gradient(135deg, #b4573c, #d98466)">
+                <img
+                  src="assets/images/foundation.webp"
+                  alt="Clay Mask"
+                  loading="lazy"
+                  onerror="this.remove()"
+                />
+              </div>
+              <div class="tile__body">
+                <b>Clay Mask</b>
+                <small>$36 · Purifying</small>
+                <a class="dbtn dbtn--ghost" href="404.html">Add to bag</a>
+              </div>
+            </div>
+            <div class="card tile">
+              <div class="tile__sw" style="background: linear-gradient(135deg, #c9a24b, #e6cb85)">
+                <img
+                  src="assets/images/fragrance.webp"
+                  alt="Gold Oil"
+                  loading="lazy"
+                  onerror="this.remove()"
+                />
+              </div>
+              <div class="tile__body">
+                <b>Gold Oil</b>
+                <small>$54 · Radiance</small>
+                <a class="dbtn dbtn--ghost" href="404.html">Add to bag</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="panel" id="panel-orders">
+        <div class="panel__head">
+          <span class="eyebrow-s">Customer Dashboard</span>
+          <h1>My orders</h1>
+          <p>Follow deliveries, reorder favourites and manage returns.</p>
+        </div>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Active delivery</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Live map</a>
+          </div>
+          <div class="card rows">
+            <div class="row">
+              <div>
+                <b>Order #ST-2041</b>
+                <small>Botanical Serum + Clay Mask · arriving Friday</small>
+              </div>
+              <span class="badge badge--gold">Shipped</span>
+            </div>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Order history</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Download all</a>
+          </div>
+          <div class="card tbl">
+            <table>
+              <thead>
+                <tr>
+                  <th>Order</th>
+                  <th>Date</th>
+                  <th>Items</th>
+                  <th>Total</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#ST-2041</td>
+                  <td>24 Sep</td>
+                  <td>2</td>
+                  <td>$84</td>
+                  <td><span class="badge badge--gold">Shipped</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Invoice</a></td>
+                </tr>
+                <tr>
+                  <td>#ST-1988</td>
+                  <td>02 Sep</td>
+                  <td>3</td>
+                  <td>$126</td>
+                  <td><span class="badge">Delivered</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Reorder</a></td>
+                </tr>
+                <tr>
+                  <td>#ST-1902</td>
+                  <td>11 Aug</td>
+                  <td>1</td>
+                  <td>$48</td>
+                  <td><span class="badge">Delivered</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Reorder</a></td>
+                </tr>
+                <tr>
+                  <td>#ST-1855</td>
+                  <td>19 Jul</td>
+                  <td>2</td>
+                  <td>$72</td>
+                  <td><span class="badge badge--clay">Returned</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Invoice</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Returns & help</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Contact us</a>
+          </div>
+          <div class="card rows">
+            <div class="row">
+              <div>
+                <b>Start a return</b>
+                <small>Free within 30 days of delivery</small>
+              </div>
+              <a class="dbtn" href="404.html">Begin</a>
+            </div>
+            <div class="row">
+              <div>
+                <b>Shipping information</b>
+                <small>Delivery times and tracking</small>
+              </div>
+              <a class="dbtn dbtn--ghost" href="404.html">Read</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="panel" id="panel-wishlist">
+        <div class="panel__head">
+          <span class="eyebrow-s">Customer Dashboard</span>
+          <h1>Saved favourites</h1>
+          <p>Everything you've bookmarked, in one calm place.</p>
+        </div>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Wishlist</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Share list</a>
+          </div>
+          <div class="tiles">
+            <div class="card tile">
+              <div class="tile__sw" style="background: linear-gradient(135deg, #b4573c, #d98466)">
+                <img
+                  src="assets/images/image.webp"
+                  alt="Rose Cleanser"
+                  loading="lazy"
+                  onerror="this.remove()"
+                />
+              </div>
+              <div class="tile__body">
+                <b>Rose Cleanser</b>
+                <small>$28</small>
+                <a class="dbtn dbtn--ghost" href="404.html">Move to bag</a>
+              </div>
+            </div>
+            <div class="card tile">
+              <div class="tile__sw" style="background: linear-gradient(135deg, #eee6d6, #d9cbb0)">
+                <img
+                  src="assets/images/cleansing-balm.webp"
+                  alt="Night Cream"
+                  loading="lazy"
+                  onerror="this.remove()"
+                />
+              </div>
+              <div class="tile__body">
+                <b>Night Cream</b>
+                <small>$62</small>
+                <a class="dbtn dbtn--ghost" href="404.html">Move to bag</a>
+              </div>
+            </div>
+            <div class="card tile">
+              <div class="tile__sw" style="background: linear-gradient(135deg, #c9a24b, #e6cb85)">
+                <img
+                  src="assets/images/pink-lip-balm.webp"
+                  alt="Lip Balm Duo"
+                  loading="lazy"
+                  onerror="this.remove()"
+                />
+              </div>
+              <div class="tile__body">
+                <b>Lip Balm Duo</b>
+                <small>$22</small>
+                <a class="dbtn dbtn--ghost" href="404.html">Move to bag</a>
+              </div>
+            </div>
+            <div class="card tile">
+              <div class="tile__sw" style="background: linear-gradient(135deg, #22402c, #3d6a4b)">
+                <img
+                  src="assets/images/products.webp"
+                  alt="Body Oil"
+                  loading="lazy"
+                  onerror="this.remove()"
+                />
+              </div>
+              <div class="tile__body">
+                <b>Body Oil</b>
+                <small>$44</small>
+                <a class="dbtn dbtn--ghost" href="404.html">Move to bag</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head"><h3>Back in stock</h3></div>
+          <div class="card rows">
+            <div class="row">
+              <div>
+                <b>Botanical Serum 30ml</b>
+                <small>Available again today</small>
+              </div>
+              <a class="dbtn" href="404.html">Buy now</a>
+            </div>
+            <div class="row">
+              <div>
+                <b>Clay Mask 50ml</b>
+                <small>Only 6 left</small>
+              </div>
+              <a class="dbtn" href="404.html">Buy now</a>
+            </div>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Build a ritual</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Browse sets</a>
+          </div>
+          <div class="card rows">
+            <div class="row">
+              <div>
+                <b>Morning glow set</b>
+                <small>Cleanser · serum · SPF — save 15%</small>
+              </div>
+              <a class="dbtn dbtn--ghost" href="404.html">View set</a>
+            </div>
+            <div class="row">
+              <div>
+                <b>Evening repair set</b>
+                <small>Oil cleanser · night cream — save 12%</small>
+              </div>
+              <a class="dbtn dbtn--ghost" href="404.html">View set</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="panel" id="panel-account">
+        <div class="panel__head">
+          <span class="eyebrow-s">Customer Dashboard</span>
+          <h1>Profile & rewards</h1>
+          <p>Your details, tier progress and preferences.</p>
+        </div>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Rewards</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Redeem</a>
+          </div>
+          <div class="stats">
+            <div class="card stat">
+              <span>Tier</span>
+              <strong>Botanist</strong>
+              <small>Gold at 3,000 pts</small>
+            </div>
+            <div class="card stat">
+              <span>Points</span>
+              <strong>2,480</strong>
+              <small>+120 this month</small>
+            </div>
+            <div class="card stat">
+              <span>Vouchers</span>
+              <strong>2</strong>
+              <small>Expire in 30 days</small>
+            </div>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Saved details</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Edit</a>
+          </div>
+          <div class="card rows">
+            <div class="row">
+              <div>
+                <b>Delivery address</b>
+                <small>12 Garden Lane, Chennai 600001</small>
+              </div>
+              <a class="dbtn dbtn--ghost" href="404.html">Change</a>
+            </div>
+            <div class="row">
+              <div>
+                <b>Payment method</b>
+                <small>Card ending 4417</small>
+              </div>
+              <a class="dbtn dbtn--ghost" href="404.html">Change</a>
+            </div>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Preferences</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Save</a>
+          </div>
+          <div class="card rows">
+            <div class="row">
+              <div>
+                <b>Skin type</b>
+                <small>Combination · sensitive</small>
+              </div>
+              <a class="dbtn dbtn--ghost" href="404.html">Update</a>
+            </div>
+            <div class="row">
+              <div>
+                <b>Email updates</b>
+                <small>New formulas and offers</small>
+              </div>
+              <span class="badge">On</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

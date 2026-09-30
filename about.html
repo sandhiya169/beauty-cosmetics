@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Stackly</title>
+  <meta name="description"
+    content="The story behind Stackly — a botanical beauty house formulating small-batch rituals since 2016.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+</head>
+
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div id="preloader">
+    <span class="preloader__mark"><img src="assets/images/stackly-white.webp" alt="Stackly Logo"></span>
+    <div class="preloader__bar"></div>
+    <span class="preloader__tag">Botanical Rituals</span>
+  </div>
+
+  <div class="grain"></div>
+
+  <!-- progress bar -->
+  <div class="scroll-bar">
+    <div class="scroll-bar__fill" id="scrollFill"></div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="siteNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__mark">
+        <img src="assets/images/stackly-white.webp" alt="Stackly" class="nav__logo nav__logo--white">
+        <img src="assets/images/stackly-logo.webp" alt="Stackly" class="nav__logo nav__logo--dark">
+      </a>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="is-active">About</a>
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn--ghost">Login</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav__mobile" id="navMobile">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="is-active">About</a>
+    <a href="products.html">Products</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="nav__mobile-login">Login</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="ab-hero">
+
+      <!-- left: full-height photo panel -->
+      <div class="ab-hero__media" data-aos="fade" data-aos-delay="0" data-aos-duration="1200">
+        <img
+          src="assets/images/serums.webp"
+          alt="Skincare bottles styled with fresh botanicals">
+
+        <!-- standards card, overlaid on the photo -->
+        <a href="404.html" class="ab-hero__feature" data-aos="fade-up" data-aos-delay="700">
+          <span class="ab-hero__feature-body">
+            <span class="ab-hero__feature-label">What we hold to</span>
+            <span class="ab-hero__feature-title">Four rules we haven't broken.</span>
+            <span class="ab-hero__feature-meta">Since 2016</span>
+          </span>
+          <span class="ab-hero__feature-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+
+      <!-- right: copy panel -->
+      <div class="ab-hero__text">
+        <div class="ab-hero__topline" data-aos="fade-up" data-aos-delay="100">
+          <p class="crumb"><a href="index.html">Home</a><span>/</span>About</p>
+          <p class="ab-hero__kicker">
+            <span class="ab-hero__kicker-dot" aria-hidden="true"></span>
+            Small batch since 2016
+          </p>
+        </div>
+
+        <h1 class="ab-hero__title">
+          <span class="line"><span data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Rooted in a</span></span>
+          <span class="line"><span data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">simple <em>idea.</em></span></span>
+        </h1>
+
+        <p class="ab-hero__sub" data-aos="fade-up" data-aos-delay="400">Skin doesn't need forty steps — it needs six plant
+          actives that actually work, formulated honestly and poured by hand in small batches since 2016.</p>
+
+        <div class="ab-hero__cta" data-aos="fade-up" data-aos-delay="500">
+          <a href="about.html" class="btn btn--solid">Read our story <i class="fas fa-arrow-right"></i></a>
+          <a href="products.html" class="btn btn--outline-light btn--sm">See The Products <i class="fas fa-shopping-bag"></i></a>
+        </div>
+
+        <dl class="ab-hero__stats" data-aos="fade-up" data-aos-delay="600">
+          <div class="ab-hero__stat">
+            <dt>Founded</dt>
+            <dd>2016</dd>
+          </div>
+          <div class="ab-hero__stat">
+            <dt>Plant actives</dt>
+            <dd>06</dd>
+          </div>
+          <div class="ab-hero__stat">
+            <dt>Customers</dt>
+            <dd>25K+</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- page index rail -->
+      <div class="ab-hero__rail" data-aos="fade-up" data-aos-delay="800">
+        <div class="ab-hero__rail-inner">
+          <span class="ab-hero__rail-label">In this page</span>
+          <nav class="ab-hero__chips" aria-label="Jump to a section">
+            <a class="chip" href="#story">Story</a>
+            <a class="chip" href="#values">Values</a>
+            <a class="chip" href="#sustain">Sustainability</a>
+            <a class="chip" href="#team">Team</a>
+            <a class="chip" href="#careers">Careers</a>
+          </nav>
+          <span class="ab-hero__scroll" aria-hidden="true">Scroll<span class="ab-hero__scroll-line"></span></span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ 2. FOUNDER NOTE ============ -->
+    <section class="ab-founder">
+      <div class="ab-founder__media" data-parallax data-aos="fade-right">
+        <img src="assets/images/founder.webp"
+          alt="Portrait of Ananya Rao, founder of Stackly">
+      </div>
+      <div class="ab-founder__text">
+        <p class="eyebrow" data-aos="fade-up">A note from our founder</p>
+        <blockquote class="ab-founder__quote" data-split-reveal>
+          I started Stackly because I couldn't find a serum that did one thing well without doing ten other things
+          badly. Every formula since has followed that same rule — earn your place, or leave it out.
+        </blockquote>
+        <p class="ab-founder__name" data-aos="fade-up" data-aos-delay="150">Ananya Rao</p>
+        <p class="ab-founder__role" data-aos="fade-up" data-aos-delay="220">Founder &amp; Head of Formulation</p>
+      </div>
+    </section>
+
+
+    <!-- ============ 3. OUR STORY — editorial dark timeline ============ -->
+    <section class="ab-story" id="story">
+      <div class="ab-story__header" data-aos="fade-up">
+        <p class="eyebrow">Our story</p>
+        <h2>Nine years, one kitchen counter to two studios.</h2>
+      </div>
+
+      <div class="ab-timeline" id="storyTimeline">
+        <div class="ab-timeline__progress" id="timelineProgress"></div>
+
+        <div class="ab-tl-item">
+          <div class="ab-tl-item__year-badge">
+            <span class="ab-tl-item__year">2016</span>
+          </div>
+          <div class="ab-tl-item__body">
+            <h3>A kitchen-counter first batch</h3>
+            <p>Founder Ananya Rao hand-poured the first 40 jars of a centella cream in her Chennai kitchen, after years
+              of reacting to everything else on the market.</p>
+          </div>
+        </div>
+
+        <div class="ab-tl-item">
+          <div class="ab-tl-item__year-badge">
+            <span class="ab-tl-item__year">2018</span>
+          </div>
+          <div class="ab-tl-item__body">
+            <h3>National launch, one hero serum</h3>
+            <p>Stackly shipped nationally with a single bakuchiol serum — no expansion for expansion's sake, just one
+              formula proven at clinical strength.</p>
+          </div>
+        </div>
+
+        <div class="ab-tl-item">
+          <div class="ab-tl-item__year-badge">
+            <span class="ab-tl-item__year">2020</span>
+          </div>
+          <div class="ab-tl-item__body">
+            <h3>Certified cruelty-free, first studio opens</h3>
+            <p>We earned cruelty-free certification and opened our Besant Nagar studio, so people could touch and test
+              before they bought.</p>
+          </div>
+        </div>
+
+        <div class="ab-tl-item">
+          <div class="ab-tl-item__year-badge">
+            <span class="ab-tl-item__year">2022</span>
+          </div>
+          <div class="ab-tl-item__body">
+            <h3>100,000 rituals shipped</h3>
+            <p>The range grew to makeup and hair, built on the same rule: six actives, no filler, full ingredient decks
+              published for every product.</p>
+          </div>
+        </div>
+
+        <div class="ab-tl-item">
+          <div class="ab-tl-item__year-badge">
+            <span class="ab-tl-item__year">2026</span>
+          </div>
+          <div class="ab-tl-item__body">
+            <h3>Two studios, 40+ countries</h3>
+            <p>A second studio opened in Bengaluru, and Stackly now ships worldwide — still formulated and packed by the
+              same small team.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============ 5. SUSTAINABILITY ============ -->
+    <section class="ab-sustain" id="sustain">
+      <div class="ab-sustain__inner">
+
+        <!-- header -->
+        <div class="ab-sustain__header">
+          <p class="eyebrow" data-aos="fade-up">How we build</p>
+          <h2 data-aos="fade-up" data-aos-delay="60">What goes back into the <em>ground</em> matters too.</h2>
+          <p class="about-lg" data-aos="fade-up" data-aos-delay="120">Formulating honestly doesn't stop at the ingredient
+            deck — it follows the jar home.</p>
+        </div>
+
+        <!-- arch photo + rotating seal -->
+        <div class="ab-sustain__visual" data-aos="fade-up" data-aos-delay="100">
+          <figure class="ab-sustain__arch" data-parallax>
+            <img src="assets/images/hero-image.webp" alt="Natural botanical ingredients used in Stackly formulas">
+            <figcaption class="ab-sustain__caption">
+              <span>Made to be refilled</span>
+              <span>Glass · Paper · Zero plastic</span>
+            </figcaption>
+          </figure>
+
+          <span class="ab-sustain__seal" aria-hidden="true">
+            <svg class="ab-sustain__seal-spin" viewBox="0 0 120 120">
+              <defs>
+                <path id="sustainSealPath" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0" />
+              </defs>
+              <text class="ab-sustain__seal-text">
+                <textPath href="#sustainSealPath" startOffset="0" textLength="279" lengthAdjust="spacing">REFILLABLE GLASS · FSC CARTONS · ZERO PLASTIC · </textPath>
+              </text>
+            </svg>
+            <i class="fas fa-leaf ab-sustain__seal-icon"></i>
+          </span>
+        </div>
+
+        <!-- the jar's journey -->
+        <ol class="ab-sustain__steps">
+          <li class="ab-sustain__step" data-aos="fade-up">
+            <span class="ab-sustain__node" aria-hidden="true"><i class="fas fa-recycle"></i></span>
+            <div class="ab-sustain__step-body">
+              <span class="ab-sustain__step-tag">01 &middot; Glass</span>
+              <h3>Refill, don't replace</h3>
+              <p>Refillable glass jars across the entire skincare line</p>
+            </div>
+            <span class="ab-sustain__ghost" aria-hidden="true">01</span>
+          </li>
+          <li class="ab-sustain__step" data-aos="fade-up">
+            <span class="ab-sustain__node" aria-hidden="true"><i class="fas fa-box-open"></i></span>
+            <div class="ab-sustain__step-body">
+              <span class="ab-sustain__step-tag">02 &middot; Paper</span>
+              <h3>Packed in paper, not plastic</h3>
+              <p>FSC-certified cartons, soy-based inks, zero plastic void-fill</p>
+            </div>
+            <span class="ab-sustain__ghost" aria-hidden="true">02</span>
+          </li>
+          <li class="ab-sustain__step" data-aos="fade-up">
+            <span class="ab-sustain__node" aria-hidden="true"><i class="fas fa-truck-fast"></i></span>
+            <div class="ab-sustain__step-body">
+              <span class="ab-sustain__step-tag">03 &middot; Shipping</span>
+              <h3>Delivered carbon-neutral</h3>
+              <p>Carbon-neutral shipping on every domestic order</p>
+            </div>
+            <span class="ab-sustain__ghost" aria-hidden="true">03</span>
+          </li>
+          <li class="ab-sustain__step" data-aos="fade-up">
+            <span class="ab-sustain__node" aria-hidden="true"><i class="fas fa-clipboard-check"></i></span>
+            <div class="ab-sustain__step-body">
+              <span class="ab-sustain__step-tag">04 &middot; Sourcing</span>
+              <h3>Checked every year</h3>
+              <p>Ingredient sourcing audited annually by a third party</p>
+            </div>
+            <span class="ab-sustain__ghost" aria-hidden="true">04</span>
+          </li>
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- ============ 4. VALUES ============ -->
+    <section class="ab-values" id="values">
+      <div class="ab-values__header" data-aos="fade-up">
+        <p class="eyebrow">What we hold to</p>
+        <h2>Four rules we haven't broken.</h2>
+      </div>
+      <div class="ab-values__grid">
+
+        <div class="ab-value" data-aos="fade-up" data-aos-delay="0">
+          <h3>Botanical integrity</h3>
+          <p>Six plant actives, maximum, in every formula — nothing added just to fill a label.</p>
+        </div>
+
+        <div class="ab-value" data-aos="fade-up" data-aos-delay="80">
+          <h3>Radical transparency</h3>
+          <p>Full ingredient decks and sourcing notes published on every product page.</p>
+        </div>
+
+        <div class="ab-value" data-aos="fade-up" data-aos-delay="160">
+          <h3>Small-batch craft</h3>
+          <p>Nothing poured in batches over 500 units — it's slower, but it's how we catch problems early.</p>
+        </div>
+
+        <div class="ab-value" data-aos="fade-up" data-aos-delay="240">
+          <h3>Cruelty-free, always</h3>
+          <p>Certified since 2020. Never tested on animals, not once, not anywhere in the supply.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============ 6. TEAM ============ -->
+    <section class="ab-team" id="team">
+      <div class="ab-team__header" data-aos="fade-up">
+        <p class="eyebrow">The people behind it</p>
+        <h2>A small team, on purpose.</h2>
+        <p class="ab-team__sub">We keep the team intentionally small — every person here shapes the product directly.</p>
+      </div>
+      <div class="ab-team__grid">
+
+        <div class="ab-member" data-aos="fade-up" data-aos-delay="0">
+          <div class="ab-member__photo">
+            <img
+              src="assets/images/team-1.webp"
+              alt="Portrait of Priya Nair">
+            <div class="ab-member__overlay">
+              <p class="ab-member__bio">Botanist-turned-formulator with 8 years crafting plant-active blends.</p>
+              <div class="ab-member__socials">
+                <a href="404.html" aria-label="Priya on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="404.html" aria-label="Priya on Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="ab-member__info">
+            <div class="ab-member__text">
+              <h3>Priya Nair</h3>
+              <p>Formulation Lead</p>
+            </div>
+            <span class="ab-member__tag">Science</span>
+          </div>
+        </div>
+
+        <div class="ab-member" data-aos="fade-up" data-aos-delay="90">
+          <div class="ab-member__photo">
+            <img
+              src="assets/images/team-2.webp"
+              alt="Portrait of Meera Krishnan">
+            <div class="ab-member__overlay">
+              <p class="ab-member__bio">Shapes every visual and tactile detail — from bottle curves to campaign feel.</p>
+              <div class="ab-member__socials">
+                <a href="404.html" aria-label="Meera on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="404.html" aria-label="Meera on Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="ab-member__info">
+            <div class="ab-member__text">
+              <h3>Meera Krishnan</h3>
+              <p>Creative Director</p>
+            </div>
+            <span class="ab-member__tag">Design</span>
+          </div>
+        </div>
+
+        <div class="ab-member" data-aos="fade-up" data-aos-delay="180">
+          <div class="ab-member__photo">
+            <img src="assets/images/team-3.webp"
+              alt="Portrait of Divya Menon">
+            <div class="ab-member__overlay">
+              <p class="ab-member__bio">Audits every ingredient source and keeps our packaging carbon-honest.</p>
+              <div class="ab-member__socials">
+                <a href="404.html" aria-label="Divya on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="404.html" aria-label="Divya on Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="ab-member__info">
+            <div class="ab-member__text">
+              <h3>Divya Menon</h3>
+              <p>Sourcing &amp; Sustainability</p>
+            </div>
+            <span class="ab-member__tag">Ethics</span>
+          </div>
+        </div>
+
+        <div class="ab-member" data-aos="fade-up" data-aos-delay="270">
+          <div class="ab-member__photo">
+            <img
+              src="assets/images/team-4.webp"
+              alt="Portrait of Aditi Rao">
+            <div class="ab-member__overlay">
+              <p class="ab-member__bio">Runs both studios and makes sure every batch ships on time, every time.</p>
+              <div class="ab-member__socials">
+                <a href="404.html" aria-label="Aditi on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="404.html" aria-label="Aditi on Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="ab-member__info">
+            <div class="ab-member__text">
+              <h3>Aditi Rao</h3>
+              <p>Studio &amp; Operations</p>
+            </div>
+            <span class="ab-member__tag">Ops</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ 7. IMPACT / STATS ============ -->
+    <section class="ab-impact">
+      <div class="ab-impact__inner">
+        <p class="eyebrow" data-aos="fade-up">Nine years in</p>
+        <h2 data-aos="fade-up">Small team, measured the way we'd want to be measured.</h2>
+        <div class="ab-impact__row" data-aos="fade-up" data-aos-delay="120">
+          <div class="ab-impact__stat">
+            <span class="stat__num">9</span>
+            <span class="stat__label">Years Formulating In Small Batches</span>
+          </div>
+          <div class="ab-impact__stat">
+            <span class="stat__num">40</span>
+            <span class="stat__label">Countries We Now Ship To</span>
+          </div>
+          <div class="ab-impact__stat">
+            <span class="stat__num">6</span>
+            <span class="stat__label">Core Plant Actives</span>
+          </div>
+          <div class="ab-impact__stat">
+            <span class="stat__num">500</span>
+            <span class="stat__label">Unit Cap On Every Batch We Pour</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. CAREERS / CTA ============ -->
+    <section class="ab-cta" id="careers">
+
+      <!-- left: copy + roles + perks -->
+      <div class="ab-cta__left" data-aos="fade-right">
+
+        <div class="ab-cta__copy" data-aos="fade-up">
+          <p class="eyebrow">Join us</p>
+          <h2>We're a small team — sometimes we're hiring.</h2>
+          <p class="ab-cta__body">Formulation, studio operations, and customer care roles open occasionally in Chennai
+            and Bengaluru. No listings right now? Send us your story anyway.</p>
+        </div>
+
+        <!-- open roles -->
+        <div class="ab-cta__roles" data-aos="fade-up" data-aos-delay="160">
+          <p class="ab-cta__roles-label">Occasionally open roles</p>
+          <ul class="ab-cta__role-list">
+            <li class="ab-cta__role" data-aos="fade-up" data-aos-delay="0">
+              <span class="ab-cta__role-icon"><i class="fa-solid fa-flask"></i></span>
+              <span class="ab-cta__role-info">
+                <strong>Formulation Chemist</strong>
+                <span>Chennai · Full-time</span>
+              </span>
+              <span class="ab-cta__role-badge">Open</span>
+            </li>
+            <li class="ab-cta__role" data-aos="fade-up" data-aos-delay="80">
+              <span class="ab-cta__role-icon"><i class="fa-solid fa-store"></i></span>
+              <span class="ab-cta__role-info">
+                <strong>Studio Operations Lead</strong>
+                <span>Bengaluru · Full-time</span>
+              </span>
+              <span class="ab-cta__role-badge ab-cta__role-badge--soon">Soon</span>
+            </li>
+            <li class="ab-cta__role" data-aos="fade-up" data-aos-delay="160">
+              <span class="ab-cta__role-icon"><i class="fa-solid fa-headset"></i></span>
+              <span class="ab-cta__role-info">
+                <strong>Customer Care Specialist</strong>
+                <span>Remote · Part-time</span>
+              </span>
+              <span class="ab-cta__role-badge ab-cta__role-badge--soon">Soon</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- perks strip -->
+        <ul class="ab-cta__perks" data-aos="fade-up" data-aos-delay="240">
+          <li><i class="fa-solid fa-leaf"></i> Plant-sourced everything</li>
+          <li><i class="fa-solid fa-clock"></i> Flexible hours</li>
+          <li><i class="fa-solid fa-heart"></i> Product allowance</li>
+          <li><i class="fa-solid fa-globe"></i> Remote-friendly</li>
+        </ul>
+
+        <div class="ab-cta__actions" data-aos="fade-up" data-aos-delay="320">
+          <a href="contact.html" class="btn btn--solid">Get in touch <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="404.html" class="btn btn--outline-dark">info@thestackly.com</a>
+        </div>
+
+      </div>
+
+      <!-- right: image panel with quote card -->
+      <div class="ab-cta__right" data-aos="fade-left" data-aos-delay="100">
+        <div class="ab-cta__media">
+          <img src="assets/images/night-serum.webp"
+            alt="Stackly studio — small-batch formulation workspace">
+          <!-- floating quote card -->
+          <div class="ab-cta__quote-card">
+            <i class="fa-solid fa-quote-left ab-cta__quote-icon"></i>
+            <p>Every person here leaves a fingerprint on the product.</p>
+            <span>— Ananya Rao, Founder</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+   <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand" data-aos="fade-up" data-aos-delay="0">
+        <a href="about.html" class="footer__logo">
+          <img src="assets/images/stackly-logo.webp" alt="Stackly">
+        </a>
+        <p>Botanical formulas made in small batches. Cruelty-free, always.</p>
+        <div class="footer__brand-social">
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="404.html" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="404.html" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__col" data-aos="fade-up" data-aos-delay="80">
+        <h4>Quick Links</h4>
+        <a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a>
+        <a href="about.html"><i class="fa-solid fa-chevron-right"></i> About</a>
+        <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Products</a>
+        <a href="blog.html"><i class="fa-solid fa-chevron-right"></i> Blog</a>
+        <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a>
+      </div>
+      <div class="footer__col" data-aos="fade-up" data-aos-delay="160">
+        <h4>Shop</h4>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Skincare</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Makeup</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Hair</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Fragrance</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Cosmetics</a>
+      </div>
+      <div class="footer__col" data-aos="fade-up" data-aos-delay="240">
+        <h4>Contact</h4>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="404.html">+91 9876543210</a>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="404.html">info@thestackly.com</a>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Salem, Tamil Nadu,<br>India</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom" data-aos="fade" data-aos-offset="0">
+      <p>© 2026 Stackly Beauty Co. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="404.html">Terms & Conditions</a>
+        <a href="404.html">Policy</a>
+        <a href="404.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/about.js"></script>
+</body>
+
+</html>

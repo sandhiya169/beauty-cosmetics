@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard — Stackly</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body data-role="admin">
+
+<div class="dash-shell">
+
+  <div class="side" id="side">
+    <a href="admin-dashboard.html" class="side__logo"><img src="assets/images/stackly-logo.webp" alt="Stackly"></a>
+    <p class="side__role">Admin Dashboard</p>
+    <div class="menu" id="menu">
+      <button type="button" class="is-active" data-id="overview">
+        <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" /></svg>
+        Overview
+      </button>
+      <button type="button" data-id="products">
+        <svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10" /></svg>
+        Products
+      </button>
+      <button type="button" data-id="orders">
+        <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8a3 3 0 016 0" /></svg>
+        Orders
+      </button>
+      <button type="button" data-id="customers">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M9 11a3 3 0 100-6 3 3 0 000 6zM3 20c0-3 3-5 6-5s6 2 6 5M17 11a3 3 0 000-6M21 20c0-2-1.5-3.5-3-4"
+          />
+        </svg>
+        Customers
+      </button>
+    </div>
+    <div class="side__foot">
+      <a href="index.html"><svg viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4z"/></svg>Back to Home</a>
+      <a href="login.html"><svg viewBox="0 0 24 24"><path d="M10 4H5v16h5M15 8l4 4-4 4M19 12H9"/></svg>Logout</a>
+    </div>
+  </div>
+  <div class="scrim" id="scrim"></div>
+
+  <div class="main">
+    <div class="top">
+      <button type="button" class="burger" id="burger" aria-label="Toggle menu"><span></span></button>
+      <span class="top__title">Admin Dashboard</span>
+      <div class="who"><i id="whoAvatar">G</i><div><small>Signed in as</small><b id="who"></b></div></div>
+    </div>
+    <div class="content" id="content">
+      <div class="panel is-active" id="panel-overview">
+        <div class="panel__head">
+          <span class="eyebrow-s">Admin Dashboard</span>
+          <h1>Store performance</h1>
+          <p>Sales, orders and stock health this week.</p>
+        </div>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Key numbers</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Export</a>
+          </div>
+          <div class="stats">
+            <div class="card stat">
+              <span>Revenue</span>
+              <strong>$18.4k</strong>
+              <small>+12% vs last week</small>
+            </div>
+            <div class="card stat">
+              <span>Orders today</span>
+              <strong>46</strong>
+              <small>9 awaiting packing</small>
+            </div>
+            <div class="card stat">
+              <span>New customers</span>
+              <strong>128</strong>
+              <small>This week</small>
+            </div>
+            <div class="card stat">
+              <span>Low stock</span>
+              <strong>5</strong>
+              <small>Needs reorder</small>
+            </div>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Sales this week</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Full report</a>
+          </div>
+          <div class="card">
+            <div class="bars">
+              <div>
+                <i style="height: 46%"></i>
+                Mon
+              </div>
+              <div>
+                <i style="height: 58%"></i>
+                Tue
+              </div>
+              <div>
+                <i style="height: 52%"></i>
+                Wed
+              </div>
+              <div>
+                <i style="height: 71%"></i>
+                Thu
+              </div>
+              <div>
+                <i style="height: 94%"></i>
+                Fri
+              </div>
+              <div>
+                <i style="height: 80%"></i>
+                Sat
+              </div>
+              <div>
+                <i style="height: 62%"></i>
+                Sun
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Top sellers</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">All products</a>
+          </div>
+          <div class="card rows">
+            <div class="row">
+              <div>
+                <b>Botanical Serum</b>
+                <small>312 sold this month</small>
+              </div>
+              <span class="badge">$14.9k</span>
+            </div>
+            <div class="row">
+              <div>
+                <b>Clay Mask</b>
+                <small>241 sold this month</small>
+              </div>
+              <span class="badge">$8.7k</span>
+            </div>
+            <div class="row">
+              <div>
+                <b>Gold Oil</b>
+                <small>176 sold this month</small>
+              </div>
+              <span class="badge">$9.5k</span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="panel" id="panel-products">
+        <div class="panel__head">
+          <span class="eyebrow-s">Admin Dashboard</span>
+          <h1>Products</h1>
+          <p>Manage your catalogue, stock levels and collections.</p>
+        </div>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Catalogue</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Add product</a>
+          </div>
+          <div class="card tbl">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Stock</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Botanical Serum</td>
+                  <td>$48</td>
+                  <td>84</td>
+                  <td><span class="badge">Live</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Edit</a></td>
+                </tr>
+                <tr>
+                  <td>Clay Mask</td>
+                  <td>$36</td>
+                  <td>12</td>
+                  <td><span class="badge badge--clay">Low</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Edit</a></td>
+                </tr>
+                <tr>
+                  <td>Gold Oil</td>
+                  <td>$54</td>
+                  <td>61</td>
+                  <td><span class="badge">Live</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Edit</a></td>
+                </tr>
+                <tr>
+                  <td>Night Cream</td>
+                  <td>$62</td>
+                  <td>0</td>
+                  <td><span class="badge badge--clay">Sold out</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Edit</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Stock alerts</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Reorder all</a>
+          </div>
+          <div class="card rows">
+            <div class="row">
+              <div>
+                <b>Clay Mask 50ml</b>
+                <small>Only 12 units left</small>
+              </div>
+              <a class="dbtn" href="404.html">Reorder</a>
+            </div>
+            <div class="row">
+              <div>
+                <b>Night Cream 40ml</b>
+                <small>Out of stock since Monday</small>
+              </div>
+              <a class="dbtn" href="404.html">Reorder</a>
+            </div>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Collections</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">New collection</a>
+          </div>
+          <div class="tiles">
+            <div class="card tile">
+              <div class="tile__sw" style="background: linear-gradient(135deg, #22402c, #3d6a4b)">
+                <img
+                  src="assets/images/bakuchiol.webp"
+                  alt="Face"
+                  loading="lazy"
+                  onerror="this.remove()"
+                />
+              </div>
+              <div class="tile__body">
+                <b>Face</b>
+                <small>14 products</small>
+                <a class="dbtn dbtn--ghost" href="404.html">Manage</a>
+              </div>
+            </div>
+            <div class="card tile">
+              <div class="tile__sw" style="background: linear-gradient(135deg, #b4573c, #d98466)">
+                <img
+                  src="assets/images/creams.webp"
+                  alt="Body"
+                  loading="lazy"
+                  onerror="this.remove()"
+                />
+              </div>
+              <div class="tile__body">
+                <b>Body</b>
+                <small>9 products</small>
+                <a class="dbtn dbtn--ghost" href="404.html">Manage</a>
+              </div>
+            </div>
+            <div class="card tile">
+              <div class="tile__sw" style="background: linear-gradient(135deg, #c9a24b, #e6cb85)">
+                <img
+                  src="assets/images/lip-balm.webp"
+                  alt="Gift sets"
+                  loading="lazy"
+                  onerror="this.remove()"
+                />
+              </div>
+              <div class="tile__body">
+                <b>Gift sets</b>
+                <small>6 products</small>
+                <a class="dbtn dbtn--ghost" href="404.html">Manage</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="panel" id="panel-orders">
+        <div class="panel__head">
+          <span class="eyebrow-s">Admin Dashboard</span>
+          <h1>Orders</h1>
+          <p>Process, ship and resolve orders.</p>
+        </div>
+        <section class="sec">
+          <div class="sec__head"><h3>Order status</h3></div>
+          <div class="stats">
+            <div class="card stat">
+              <span>Pending</span>
+              <strong>9</strong>
+              <small>To pack today</small>
+            </div>
+            <div class="card stat">
+              <span>Shipped</span>
+              <strong>31</strong>
+              <small>In transit</small>
+            </div>
+            <div class="card stat">
+              <span>Refunds</span>
+              <strong>3</strong>
+              <small>Awaiting review</small>
+            </div>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Order queue</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Print labels</a>
+          </div>
+          <div class="card tbl">
+            <table>
+              <thead>
+                <tr>
+                  <th>Order</th>
+                  <th>Customer</th>
+                  <th>Total</th>
+                  <th>Status</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#ST-2049</td>
+                  <td>Meera K.</td>
+                  <td>$92</td>
+                  <td><span class="badge badge--gold">Pending</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Open</a></td>
+                </tr>
+                <tr>
+                  <td>#ST-2048</td>
+                  <td>Aarav S.</td>
+                  <td>$48</td>
+                  <td><span class="badge">Packed</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Open</a></td>
+                </tr>
+                <tr>
+                  <td>#ST-2047</td>
+                  <td>Lina P.</td>
+                  <td>$134</td>
+                  <td><span class="badge">Shipped</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Open</a></td>
+                </tr>
+                <tr>
+                  <td>#ST-2046</td>
+                  <td>Rohan D.</td>
+                  <td>$36</td>
+                  <td><span class="badge badge--clay">Refund</span></td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Open</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Fulfilment</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Settings</a>
+          </div>
+          <div class="card rows">
+            <div class="row">
+              <div>
+                <b>Chennai warehouse</b>
+                <small>Cut-off for same-day dispatch: 3 pm</small>
+              </div>
+              <a class="dbtn dbtn--ghost" href="404.html">Manage</a>
+            </div>
+            <div class="row">
+              <div>
+                <b>Courier partners</b>
+                <small>3 active carriers</small>
+              </div>
+              <a class="dbtn dbtn--ghost" href="404.html">Manage</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="panel" id="panel-customers">
+        <div class="panel__head">
+          <span class="eyebrow-s">Admin Dashboard</span>
+          <h1>Customers</h1>
+          <p>Who is shopping, and what they are saying.</p>
+        </div>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Audience</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">Export</a>
+          </div>
+          <div class="stats">
+            <div class="card stat">
+              <span>Total</span>
+              <strong>4,820</strong>
+              <small>+128 this week</small>
+            </div>
+            <div class="card stat">
+              <span>Returning</span>
+              <strong>38%</strong>
+              <small>Up 4 pts</small>
+            </div>
+            <div class="card stat">
+              <span>Avg basket</span>
+              <strong>$67</strong>
+              <small>Per order</small>
+            </div>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Recent sign-ups</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">View all</a>
+          </div>
+          <div class="card tbl">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Joined</th>
+                  <th>Orders</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Meera K.</td>
+                  <td>Today</td>
+                  <td>1</td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Profile</a></td>
+                </tr>
+                <tr>
+                  <td>Aarav S.</td>
+                  <td>Yesterday</td>
+                  <td>2</td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Profile</a></td>
+                </tr>
+                <tr>
+                  <td>Lina P.</td>
+                  <td>3 days ago</td>
+                  <td>1</td>
+                  <td><a class="dbtn dbtn--ghost" href="404.html">Profile</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="sec">
+          <div class="sec__head">
+            <h3>Latest feedback</h3>
+            <a class="dbtn dbtn--ghost" href="404.html">All reviews</a>
+          </div>
+          <div class="card rows">
+            <div class="row">
+              <div>
+                <b>"Skin felt calmer in a week."</b>
+                <small>Botanical Serum · 5 stars</small>
+              </div>
+              <a class="dbtn dbtn--ghost" href="404.html">Reply</a>
+            </div>
+            <div class="row">
+              <div>
+                <b>"Packaging arrived slightly dented."</b>
+                <small>Clay Mask · 3 stars</small>
+              </div>
+              <a class="dbtn" href="404.html">Reply</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="assets/js/dashboard.js"></script>
+</body>
+</html>

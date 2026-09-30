@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly — Botanical Rituals for Modern Skin</title>
+  <meta name="description"
+    content="Stackly is a modern botanical beauty house — skincare, makeup, hair and fragrance rituals made from real plant actives.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div id="preloader">
+    <span class="preloader__mark"><img src="assets/images/stackly-white.webp" alt="Stackly Logo"></span>
+    <div class="preloader__bar"></div>
+    <span class="preloader__tag">Botanical Rituals</span>
+  </div>
+
+  <div class="grain"></div>
+
+  <!-- progress bar -->
+  <div class="scroll-bar">
+    <div class="scroll-bar__fill" id="scrollFill"></div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="siteNav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__mark">
+        <img src="assets/images/stackly-white.webp" alt="Stackly" class="nav__logo nav__logo--white">
+        <img src="assets/images/stackly-logo.webp" alt="Stackly" class="nav__logo nav__logo--dark">
+      </a>
+      <nav class="nav__links">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="login.html" class="btn btn--ghost">Login</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav__mobile" id="navMobile">
+    <a href="index.html" class="is-active">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="nav__mobile-login">Login</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ 1. HERO — home only: light editorial masthead
+         (inner pages keep the dark full-bleed photo hero) ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="assets/images/index-hero-image.webp"
+          alt="">
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <span class="hero__rules" aria-hidden="true"></span>
+      <span class="hero__halo" aria-hidden="true"></span>
+
+      <div class="hero__inner">
+
+        <!-- ── copy column ── -->
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow" data-aos="fade-up" data-aos-delay="100">
+            <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+            Botanical formulas, clinically proven
+          </p>
+
+          <h1 class="hero__title">
+            <span class="line"><span data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Skin rituals,</span></span>
+            <span class="line"><span data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"><em>rooted</em> in nature.</span></span>
+          </h1>
+
+          <p class="hero__sub" data-aos="fade-up" data-aos-delay="400">Six plant actives, no fillers, and a formula for every skin story — made by
+            Stackly in small batches since 2016.</p>
+
+          <div class="hero__cta" data-aos="fade-up" data-aos-delay="500">
+            <a href="products.html" class="btn btn--solid">Shop The Products <i class="fa-solid fa-arrow-right"
+                aria-hidden="true"></i></a>
+            <a href="404.html" class="btn btn--text">Our philosophy <i class="fa-solid fa-arrow-right"
+                aria-hidden="true"></i></a>
+          </div>
+
+          <div class="hero__proof" data-aos="fade-up" data-aos-delay="600">
+            <div class="hero__faces" aria-hidden="true">
+              <span class="hero__face"><img
+                  src="assets/images/testimonial-1.webp"
+                  alt=""></span>
+              <span class="hero__face"><img
+                  src="assets/images/testimonial-2.webp"
+                  alt=""></span>
+              <span class="hero__face"><img
+                  src="assets/images/testimonial-4.webp"
+                  alt=""></span>
+            </div>
+            <div class="hero__proof-text">
+              <span class="hero__stars" aria-hidden="true">★★★★★</span>
+              <p><strong>4.9</strong> average from 2,400+ verified reviews</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── visual column ── -->
+        <div class="hero__visual" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1100">
+          <figure class="hero__frame">
+            <div class="hero__media">
+              <img src="assets/images/shades.webp"
+                alt="Stackly Sheer Bloom Lipstick shades">
+            </div>
+            <figcaption class="hero__caption">
+              <span>The Ritual Edit</span>
+              <span>No. 04 — Autumn</span>
+            </figcaption>
+          </figure>
+
+          <span class="hero__seal" aria-hidden="true">
+            <svg class="hero__seal-spin" viewBox="0 0 120 120">
+              <defs>
+                <path id="heroSealPath" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0" />
+              </defs>
+              <text class="hero__seal-text">
+                <textPath href="#heroSealPath" startOffset="0">SMALL BATCH · CRUELTY FREE · SINCE 2016 · </textPath>
+              </text>
+            </svg>
+            <svg class="hero__seal-core" viewBox="0 0 120 120">
+              <circle class="hero__seal-ring" cx="60" cy="60" r="33" />
+              <text class="hero__seal-mark" x="60" y="71"><i class="fa-solid fa-leaf" aria-hidden="true"></i></text>
+            </svg>
+          </span>
+
+          <a href="products.html" class="hero__card">
+            <span class="hero__card-img"><img src="assets/images/night-serum.webp" alt="Bakuchiol Night Serum"></span>
+            <span class="hero__card-body">
+              <span class="hero__card-label">Bestseller</span>
+              <span class="hero__card-title">Bakuchiol Night Serum</span>
+              <span class="hero__card-price">$48</span>
+            </span>
+            <span class="hero__card-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- ── bottom proof bar ── -->
+      <div class="hero__bar" data-aos="fade-up" data-aos-delay="700">
+        <dl class="hero__stats">
+          <div class="hero__stat">
+            <dd>12k+</dd>
+            <dt>Rituals shipped</dt>
+          </div>
+          <div class="hero__stat">
+            <dd>6</dd>
+            <dt>Core plant actives</dt>
+          </div>
+          <div class="hero__stat">
+            <dd>100%</dd>
+            <dt>Cruelty-free &amp; vegan</dt>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ 2. INGREDIENT MARQUEE ============ -->
+    <section class="marquee" data-aos="fade">
+      <div class="marquee__track" id="marqueeTrack">
+        <span>Squalane</span><span>·</span><span>Bakuchiol</span><span>·</span><span>Niacinamide</span><span>·</span>
+        <span>Centella Asiatica</span><span>·</span><span>Marula
+          Oil</span><span>·</span><span>Rosehip</span><span>·</span>
+        <span>Squalane</span><span>·</span><span>Bakuchiol</span><span>·</span><span>Niacinamide</span><span>·</span>
+        <span>Centella Asiatica</span><span>·</span><span>Marula
+          Oil</span><span>·</span><span>Rosehip</span><span>·</span>
+      </div>
+    </section>
+
+    <!-- ============ 3. PHILOSOPHY ============ -->
+    <section class="philosophy" id="philosophy">
+
+      <!-- Large decorative background number -->
+      <span class="philosophy__deco-num" aria-hidden="true">01</span>
+
+      <!-- Vertical side label -->
+      <p class="philosophy__side-label" aria-hidden="true">Philosophy — Stackly</p>
+
+      <!-- Main grid -->
+      <div class="philosophy__grid">
+
+        <!-- Col 1: Headline + body -->
+        <div class="philosophy__text-col">
+          <p class="eyebrow philosophy__eyebrow" data-aos="fade-up">01 — Our Philosophy</p>
+
+          <h2 class="philosophy__title" data-aos="fade-up" data-aos-delay="80">We formulate the way a<br><em>botanist</em><br>would.</h2>
+
+          <div class="philosophy__body-wrap" data-aos="fade-up" data-aos-delay="160">
+            <div class="philosophy__rule"></div>
+            <p class="philosophy__body">Every formula starts with a single hero plant extract, tested at clinical strength, then simplified until nothing extra remains. No synthetic fragrance, no filler oils, no greenwashing — ever.</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Shaped image -->
+        <div class="philosophy__image-col" data-aos="fade-up" data-aos-delay="120">
+          <div class="philosophy__frame">
+            <img src="assets/images/creams.webp"
+              alt="" data-parallax>
+            <!-- Floating badge -->
+            <div class="philosophy__badge">
+              <span class="philosophy__badge-text">Clean<br>Beauty</span>
+              <svg class="philosophy__badge-ring" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="55" stroke="currentColor" stroke-width="1" stroke-dasharray="4 6"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 3: Stats column -->
+        <div class="philosophy__stats-col">
+          <div class="phil-stat" data-aos="fade-up" data-aos-delay="100">
+            <span class="phil-stat__num">92<span class="phil-stat__pct">%</span></span>
+            <span class="phil-stat__bar"><span style="width:92%"></span></span>
+            <span class="phil-stat__label">saw visible change in 4 weeks</span>
+          </div>
+          <div class="phil-stat" data-aos="fade-up" data-aos-delay="200">
+            <span class="phil-stat__num">6</span>
+            <span class="phil-stat__bar"><span style="width:60%"></span></span>
+            <span class="phil-stat__label">core plant actives, always</span>
+          </div>
+          <div class="phil-stat" data-aos="fade-up" data-aos-delay="300">
+            <span class="phil-stat__num">0</span>
+            <span class="phil-stat__bar"><span style="width:5%"></span></span>
+            <span class="phil-stat__label">synthetic fragrance, ever</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ 4. SHOP BY CATEGORY — accordion panels ============ -->
+    <section class="categories" id="shop">
+      <div class="categories__header" data-aos="fade-up">
+        <p class="eyebrow">02 — Shop</p>
+        <h2>Four rituals, one shelf.</h2>
+      </div>
+
+      <div class="cat-accordion" id="catAccordion" data-aos="fade-up" data-aos-delay="120">
+
+        <div class="cat-panel is-open" data-index="0">
+          <div class="cat-panel__label">
+            <span class="cat-panel__num">01</span>
+            <h3>Skincare</h3>
+            <p class="cat-panel__sub">Serums &amp; moisture</p>
+            <a href="404.html" class="cat-panel__link">Shop now <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="cat-panel__image">
+            <img
+              src="assets/images/image.webp"
+              alt="Skincare products styled with fresh flowers">
+          </div>
+        </div>
+
+        <div class="cat-panel" data-index="1">
+          <div class="cat-panel__label">
+            <span class="cat-panel__num">02</span>
+            <h3>Makeup</h3>
+            <p class="cat-panel__sub">Skin-first colour</p>
+            <a href="404.html" class="cat-panel__link">Shop now <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="cat-panel__image">
+            <img
+              src="assets/images/foundation.webp"
+              alt="Foundation and eyeshadow flatlay">
+          </div>
+        </div>
+
+        <div class="cat-panel" data-index="2">
+          <div class="cat-panel__label">
+            <span class="cat-panel__num">03</span>
+            <h3>Hair</h3>
+            <p class="cat-panel__sub">Scalp &amp; strand care</p>
+            <a href="404.html" class="cat-panel__link">Shop now <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="cat-panel__image">
+            <img src="assets/images/hair-care.webp"
+              alt="Woman with soft natural hair in a bun">
+          </div>
+        </div>
+
+        <div class="cat-panel" data-index="3">
+          <div class="cat-panel__label">
+            <span class="cat-panel__num">04</span>
+            <h3>Fragrance</h3>
+            <p class="cat-panel__sub">Botanical eau de parfum</p>
+            <a href="404.html" class="cat-panel__link">Shop now <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="cat-panel__image">
+            <img
+              src="assets/images/fragrance.webp"
+              alt="Perfume bottle beside an antique mirror">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ 5. BESTSELLERS — editorial list ============ -->
+    <section class="editorial-list" id="editorial-list">
+      <div class="editorial-list__intro" data-aos="fade-up">
+        <p class="eyebrow">03 — Bestsellers</p>
+        <h2>What people reach for twice.</h2>
+      </div>
+
+      <div class="best-list">
+
+        <a class="best-row" href="404.html">
+          <div class="best-row__meta">
+            <span class="best-row__idx">01</span>
+            <div class="best-row__info">
+              <p class="best-row__tag">Makeup</p>
+              <h3>Sheer Bloom Lipstick</h3>
+            </div>
+          </div>
+          <p class="best-row__desc">Buildable colour with rosehip oil at the core.</p>
+          <div class="best-row__right">
+            <span class="best-row__price">$28</span>
+            <div class="best-row__thumb">
+              <img src="assets/images/bloom-lipstick.webp"
+                alt="Assorted lipstick shades">
+            </div>
+          </div>
+        </a>
+
+        <a class="best-row" href="404.html">
+          <div class="best-row__meta">
+            <span class="best-row__idx">02</span>
+            <div class="best-row__info">
+              <p class="best-row__tag">Makeup</p>
+              <h3>Glass Gloss Duo</h3>
+            </div>
+          </div>
+          <p class="best-row__desc">Marula-oil shine, no sticky finish.</p>
+          <div class="best-row__right">
+            <span class="best-row__price">$22</span>
+            <div class="best-row__thumb">
+              <img src="assets/images/glass-duo.webp"
+                alt="Pink lip gloss product shot">
+            </div>
+          </div>
+        </a>
+
+        <a class="best-row" href="404.html">
+          <div class="best-row__meta">
+            <span class="best-row__idx">03</span>
+            <div class="best-row__info">
+              <p class="best-row__tag">Skincare</p>
+              <h3>The Essentials Set</h3>
+            </div>
+          </div>
+          <p class="best-row__desc">Cleanse, serum and moisture — one box.</p>
+          <div class="best-row__right">
+            <span class="best-row__price">$74</span>
+            <div class="best-row__thumb">
+              <img src="assets/images/set.webp"
+                alt="Beauty product flatlay">
+            </div>
+          </div>
+        </a>
+
+        <a class="best-row" href="404.html">
+          <div class="best-row__meta">
+            <span class="best-row__idx">04</span>
+            <div class="best-row__info">
+              <p class="best-row__tag">Tools</p>
+              <h3>Studio Brush Set</h3>
+            </div>
+          </div>
+          <p class="best-row__desc">Five brushes, vegan bristle, walnut handles.</p>
+          <div class="best-row__right">
+            <span class="best-row__price">$46</span>
+            <div class="best-row__thumb">
+              <img src="assets/images/brush-set.webp"
+                alt="Set of makeup brushes">
+            </div>
+          </div>
+        </a>
+
+        <a class="best-row" href="404.html">
+          <div class="best-row__meta">
+            <span class="best-row__idx">05</span>
+            <div class="best-row__info">
+              <p class="best-row__tag">Skincare</p>
+              <h3>Overnight Lip Balm</h3>
+            </div>
+          </div>
+          <p class="best-row__desc">Shea and centella, for chronically dry lips.</p>
+          <div class="best-row__right">
+            <span class="best-row__price">$14</span>
+            <div class="best-row__thumb">
+              <img src="assets/images/lip-balm.webp"
+                alt="Lip balm tube">
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ============ 6. THE RITUAL — vertical timeline ============ -->
+    <section class="ritual" id="ritual">
+      <div class="ritual__header" data-aos="fade-up">
+        <p class="eyebrow">04 — The Ritual</p>
+        <h2>Three minutes, morning and night.</h2>
+      </div>
+
+      <div class="ritual-timeline">
+
+        <div class="ritual-step" data-step="odd">
+          <div class="ritual-step__num-wrap">
+            <span class="ritual-step__giant">01</span>
+          </div>
+          <div class="ritual-step__body">
+            <div class="ritual-step__image">
+              <img src="assets/images/cleanse.webp" alt="Applying balm to lips">
+            </div>
+            <div class="ritual-step__text">
+              <h3>Cleanse</h3>
+              <p>A cream cleanser that never strips the skin barrier, morning and night. Work into damp skin, rinse, and
+                press dry — never rub.</p>
+              <a href="products.html" class="btn btn--solid btn--sm">Shop Cleansers <i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ritual-step" data-step="even">
+          <div class="ritual-step__num-wrap">
+            <span class="ritual-step__giant">02</span>
+          </div>
+          <div class="ritual-step__body">
+            <div class="ritual-step__image">
+              <img src="assets/images/serum.webp" alt="Woman using a jade facial massager">
+            </div>
+            <div class="ritual-step__text">
+              <h3>Nourish</h3>
+              <p>Serum first, massaged in with a cool tool to help circulation and absorption. Press — don't rub — for
+                maximum uptake.</p>
+              <a href="products.html" class="btn btn--solid btn--sm">Shop Serums <i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ritual-step" data-step="odd">
+          <div class="ritual-step__num-wrap">
+            <span class="ritual-step__giant">03</span>
+          </div>
+          <div class="ritual-step__body">
+            <div class="ritual-step__image">
+              <img src="assets/images/moisture.webp" alt="Woman applying lip balm">
+            </div>
+            <div class="ritual-step__text">
+              <h3>Seal</h3>
+              <p>A lightweight balm locks moisture in without ever feeling heavy. The final step that makes every step
+                before it last.</p>
+              <a href="products.html" class="btn btn--solid btn--sm">Shop Balms <i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ 7. INGREDIENT SPOTLIGHT — oversized type + strips ============ -->
+    <section class="spotlight">
+      <div class="spotlight__bg" data-parallax-strong>
+        <img src="assets/images/bakuchiol.webp"
+          alt="Beauty products and jewellery styled together">
+      </div>
+      <div class="spotlight__overlay"></div>
+
+      <div class="spotlight__content">
+        <p class="eyebrow" data-aos="fade-up">05 — Spotlight</p>
+        <div class="spotlight__word-row">
+          <span class="spotlight__big-word">Ba&shy;ku&shy;chiol</span>
+        </div>
+        <p class="spotlight__subtitle" data-aos="fade-up" data-aos-delay="100">Retinol's calmer cousin.</p>
+        <p class="spotlight__body" data-aos="fade-up" data-aos-delay="200">Derived from the Babchi plant, bakuchiol delivers retinol-like renewal without the
+          irritation — safe for sensitive skin, safe in daylight, safe through pregnancy.</p>
+        <a href="404.html" class="btn btn--outline-light" data-aos="fade-up" data-aos-delay="300">Read the ingredient guide <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="spotlight__strips">
+        <div class="spotlight__strip">Safe for sensitive skin</div>
+        <div class="spotlight__strip">Safe in daylight</div>
+        <div class="spotlight__strip">Safe through pregnancy</div>
+        <div class="spotlight__strip">Proven retinol-equivalent</div>
+      </div>
+    </section>
+
+    <!-- ============ 8. TESTIMONIALS — fullwidth rotating quote ============ -->
+    <section class="stories" id="stories">
+      <div class="stories__header" data-aos="fade-up">
+        <p class="eyebrow">06 — Stories</p>
+        <h2>From the Stackly community.</h2>
+      </div>
+
+      <div class="stories__stage" data-aos="fade-up" data-aos-delay="120">
+        <button class="stories__nav stories__nav--prev" id="storyPrev" aria-label="Previous story"><i
+            class="fa-solid fa-chevron-left"></i></button>
+
+        <div class="stories__viewport" id="storyViewport">
+
+          <div class="story-slide is-active" data-idx="0">
+            <div class="story-slide__avatar">
+              <img
+                src="assets/images/testimonial-1.webp"
+                alt="Portrait of Meera K.">
+            </div>
+            <div class="story-slide__content">
+              <div class="story-slide__quote-mark">&ldquo;</div>
+              <blockquote class="story-slide__quote">My skin has never held moisture like this through a Delhi summer.
+                The serum is the only thing that hasn't broken me out in years.</blockquote>
+              <footer class="story-slide__footer">
+                <strong>Meera K.</strong>
+                <span>Verified buyer · Delhi</span>
+              </footer>
+            </div>
+          </div>
+
+          <div class="story-slide" data-idx="1">
+            <div class="story-slide__avatar">
+              <img
+                src="assets/images/testimonial-2.webp"
+                alt="Portrait of Aditi R.">
+            </div>
+            <div class="story-slide__content">
+              <div class="story-slide__quote-mark">&ldquo;</div>
+              <blockquote class="story-slide__quote">I'm a makeup artist and I now keep the brush set in every kit I
+                own. They hold pigment beautifully and clean up in seconds.</blockquote>
+              <footer class="story-slide__footer">
+                <strong>Aditi R.</strong>
+                <span>Makeup artist · Mumbai</span>
+              </footer>
+            </div>
+          </div>
+
+          <div class="story-slide" data-idx="2">
+            <div class="story-slide__avatar">
+              <img
+                src="assets/images/testimonial-4.webp"
+                alt="Portrait of Priya S.">
+            </div>
+            <div class="story-slide__content">
+              <div class="story-slide__quote-mark">&ldquo;</div>
+              <blockquote class="story-slide__quote">The lip balm is the first thing I pack in every bag. Not sticky,
+                not waxy — just quietly works.</blockquote>
+              <footer class="story-slide__footer">
+                <strong>Priya S.</strong>
+                <span>Verified buyer · Bangalore</span>
+              </footer>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="stories__nav stories__nav--next" id="storyNext" aria-label="Next story"><i
+            class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+      <div class="stories__dots" id="storyDots"></div>
+    </section>
+
+    <!-- ============ 9. BESTSELLERS ============ -->
+    <section class="bestsellers" id="bestsellers">
+      <div class="bestsellers__header" data-aos="fade-up">
+        <p class="eyebrow">07 — Bestsellers</p>
+        <h2>Loved by everyone.</h2>
+      </div>
+
+      <div class="bestsellers__track" data-aos="fade" data-aos-delay="120">
+        <div class="bestsellers__grid">
+          <!-- Product 1 -->
+          <a href="products.html" class="bestseller-card">
+            <div class="bestseller-card__image">
+              <img src="assets/images/night-serum.webp" alt="Bakuchiol Night Serum">
+              <span class="bestseller-card__badge">Best Seller</span>
+            </div>
+            <div class="bestseller-card__info">
+              <h3 class="bestseller-card__title">Bakuchiol Night Serum</h3>
+              <p class="bestseller-card__desc">Retinol alternative for sensitive skin.</p>
+              <span class="bestseller-card__price">$48</span>
+            </div>
+          </a>
+
+          <!-- Product 2 -->
+          <a href="products.html" class="bestseller-card">
+            <div class="bestseller-card__image">
+              <img src="assets/images/cleansing-balm.webp" alt="Oat Cleansing Balm">
+            </div>
+            <div class="bestseller-card__info">
+              <h3 class="bestseller-card__title">Oat Cleansing Balm</h3>
+              <p class="bestseller-card__desc">Melts away makeup without stripping.</p>
+              <span class="bestseller-card__price">$24</span>
+            </div>
+          </a>
+
+          <!-- Product 3 -->
+          <a href="products.html" class="bestseller-card">
+            <div class="bestseller-card__image">
+              <img src="assets/images/mineral-spf.webp" alt="Daily Mineral SPF">
+              <span class="bestseller-card__badge">Award Winner</span>
+            </div>
+            <div class="bestseller-card__info">
+              <h3 class="bestseller-card__title">Daily Mineral SPF</h3>
+              <p class="bestseller-card__desc">Invisible finish, zero white cast.</p>
+              <span class="bestseller-card__price">$32</span>
+            </div>
+          </a>
+
+          <!-- Product 4 -->
+          <a href="products.html" class="bestseller-card">
+            <div class="bestseller-card__image">
+              <img src="assets/images/lip-balm.webp" alt="Hydrating Lip Balm">
+            </div>
+            <div class="bestseller-card__info">
+              <h3 class="bestseller-card__title">Hydrating Lip Balm</h3>
+              <p class="bestseller-card__desc">Locks in moisture for 12 hours.</p>
+              <span class="bestseller-card__price">$16</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Duplicated for infinite scrolling -->
+        <div class="bestsellers__grid" aria-hidden="true">
+          <!-- Product 1 -->
+          <a href="products.html" class="bestseller-card" tabindex="-1">
+            <div class="bestseller-card__image">
+              <img src="assets/images/night-serum.webp" alt="Bakuchiol Night Serum">
+              <span class="bestseller-card__badge">Best Seller</span>
+            </div>
+            <div class="bestseller-card__info">
+              <h3 class="bestseller-card__title">Bakuchiol Night Serum</h3>
+              <p class="bestseller-card__desc">Retinol alternative for sensitive skin.</p>
+              <span class="bestseller-card__price">$48</span>
+            </div>
+          </a>
+
+          <!-- Product 2 -->
+          <a href="products.html" class="bestseller-card" tabindex="-1">
+            <div class="bestseller-card__image">
+              <img src="assets/images/cleansing-balm.webp" alt="Oat Cleansing Balm">
+            </div>
+            <div class="bestseller-card__info">
+              <h3 class="bestseller-card__title">Oat Cleansing Balm</h3>
+              <p class="bestseller-card__desc">Melts away makeup without stripping.</p>
+              <span class="bestseller-card__price">$24</span>
+            </div>
+          </a>
+
+          <!-- Product 3 -->
+          <a href="products.html" class="bestseller-card" tabindex="-1">
+            <div class="bestseller-card__image">
+              <img src="assets/images/mineral-spf.webp" alt="Daily Mineral SPF">
+              <span class="bestseller-card__badge">Award Winner</span>
+            </div>
+            <div class="bestseller-card__info">
+              <h3 class="bestseller-card__title">Daily Mineral SPF</h3>
+              <p class="bestseller-card__desc">Invisible finish, zero white cast.</p>
+              <span class="bestseller-card__price">$32</span>
+            </div>
+          </a>
+
+          <!-- Product 4 -->
+          <a href="products.html" class="bestseller-card" tabindex="-1">
+            <div class="bestseller-card__image">
+              <img src="assets/images/lip-balm.webp" alt="Hydrating Lip Balm">
+            </div>
+            <div class="bestseller-card__info">
+              <h3 class="bestseller-card__title">Hydrating Lip Balm</h3>
+              <p class="bestseller-card__desc">Locks in moisture for 12 hours.</p>
+              <span class="bestseller-card__price">$16</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10. NEWSLETTER — bold typographic split ============ -->
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter__inner">
+        <div class="newsletter__kicker" data-aos="fade-up">
+          <span class="newsletter__line" aria-hidden="true"></span>
+          <p class="eyebrow">Join the list</p>
+          <span class="newsletter__line" aria-hidden="true"></span>
+        </div>
+        <h2 class="newsletter__heading" data-aos="fade-up" data-aos-delay="80">
+          Get first access to<br>
+          <em>new formulas.</em>
+        </h2>
+        <p class="newsletter__pitch" data-aos="fade-up" data-aos-delay="160">Early drops, restock alerts, and the occasional discount — straight to your inbox,
+          nothing else.</p>
+        <form class="newsletter__form" id="newsletterForm" data-aos="fade-up" data-aos-delay="240" novalidate>
+          <div class="newsletter__field-wrap" id="newsletterFieldWrap">
+            <input type="email" id="newsletterEmail" placeholder="your@email.com" aria-label="Email address" autocomplete="email">
+            <button type="submit" class="newsletter__btn">Subscribe <i class="fa-solid fa-arrow-right"
+                aria-hidden="true"></i></button>
+          </div>
+          <p class="newsletter__error" id="newsletterError" aria-live="polite" role="alert"></p>
+          <p class="newsletter__note" id="newsletterNote">Unsubscribe anytime — no questions asked.</p>
+        </form>
+        <ul class="newsletter__trust" data-aos="fade-up" data-aos-delay="320">
+          <li><i class="fa-solid fa-lock" aria-hidden="true"></i> No sharing your data</li>
+          <li><i class="fa-regular fa-envelope" aria-hidden="true"></i> One email a month</li>
+          <li><i class="fa-solid fa-leaf" aria-hidden="true"></i> Stackly curated only</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand" data-aos="fade-up" data-aos-delay="0">
+        <a href="index.html" class="footer__logo">
+          <img src="assets/images/stackly-logo.webp" alt="Stackly">
+        </a>
+        <p>Botanical formulas made in small batches. Cruelty-free, always.</p>
+        <div class="footer__brand-social">
+          <a href="404.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="404.html" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="404.html" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="404.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="404.html" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer__col" data-aos="fade-up" data-aos-delay="80">
+        <h4>Quick Links</h4>
+        <a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a>
+        <a href="about.html"><i class="fa-solid fa-chevron-right"></i> About</a>
+        <a href="products.html"><i class="fa-solid fa-chevron-right"></i> Products</a>
+        <a href="blog.html"><i class="fa-solid fa-chevron-right"></i> Blog</a>
+        <a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a>
+      </div>
+      <div class="footer__col" data-aos="fade-up" data-aos-delay="160">
+        <h4>Shop</h4>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Skincare</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Makeup</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Hair</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Fragrance</a>
+        <a href="404.html"><i class="fa-solid fa-chevron-right"></i> Cosmetics</a>
+      </div>
+      <div class="footer__col" data-aos="fade-up" data-aos-delay="240">
+        <h4>Contact</h4>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="404.html">+91 9876543210</a>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="404.html">info@thestackly.com</a>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Salem, Tamil Nadu,<br>India</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom" data-aos="fade" data-aos-offset="0">
+      <p>© 2026 Stackly Beauty Co. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="404.html">Terms & Conditions</a>
+        <a href="404.html">Policy</a>
+        <a href="404.html">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

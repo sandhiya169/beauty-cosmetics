@@ -79,15 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 700);
     });
 
-    /* Google — demo only, no real OAuth, nothing stored */
-    const googleBtn = document.getElementById('googleLoginBtn');
-    googleBtn?.addEventListener('click', () => {
-      note.textContent = 'Demo sign-in with Google — taking you to your dashboard…';
-      note.className = 'authnote is-success';
-      setTimeout(() => {
-        window.location.href = 'customer-dashboard.html?email=you%40gmail.com';
-      }, 700);
-    });
+    /* Google button simply navigates to 404 as per its href, no JS timeout needed. */
   }
 
   /* ---------------- SIGNUP ---------------- */

@@ -147,15 +147,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- Newsletter Form Validation & Redirect ---------- */
   const newsletterForm = document.getElementById('newsletterForm');
+  const newsletterError = document.getElementById('newsletterError');
   if (newsletterForm) {
+    const input = newsletterForm.querySelector('input[type="email"]');
+    
+    // Hide error when user starts typing
+    if (input && newsletterError) {
+      input.addEventListener('input', () => {
+        newsletterError.style.display = 'none';
+      });
+    }
+
     newsletterForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const input = newsletterForm.querySelector('input[type="email"]');
       if (input && input.value.trim() !== '' && input.checkValidity()) {
+        if (newsletterError) newsletterError.style.display = 'none';
         newsletterForm.reset();
         window.location.href = '404.html';
       } else {
-        alert('Please enter a valid email address.');
+        if (newsletterError) newsletterError.style.display = 'block';
       }
     });
   }

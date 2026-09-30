@@ -531,9 +531,10 @@
       <p class="newsletter__pitch" data-aos="fade-up" data-aos-delay="100">New entries, ingredient deep-dives and the occasional formulation failure we're not too proud to talk about.</p>
       <form class="newsletter__form" id="newsletterForm" novalidate>
         <div class="newsletter__field-wrap">
-          <input type="email" required placeholder="your@email.com" aria-label="Email address">
+          <input type="email" required placeholder="your@email.com" aria-label="Email address" id="blogNewsletterEmailInput">
           <button type="submit" class="newsletter__btn">Subscribe <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
         </div>
+        <p id="newsletterError" style="color: #e57373; font-size: 0.9rem; margin-top: 8px; display: none; text-align: left;">Please enter a valid email address.</p>
         <p class="newsletter__note" id="newsletterNote" role="status" aria-live="polite">Unsubscribe anytime — no questions asked.</p>
       </form>
       <ul class="newsletter__trust" data-aos="fade-up" data-aos-delay="200">
